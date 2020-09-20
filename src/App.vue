@@ -20,6 +20,6 @@ import Contador from "./componentes/Contador.vue"
   }
 </script>
 
-<style scoped>
+<style >
  
 </style>

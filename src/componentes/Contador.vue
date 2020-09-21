@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
-     <button @click="countdown(3)">3 seg</button>
-     <button @click="countdown(60)">1 min</button>
-     <button @click="countdown(300)">5 min</button>
-     <button @click="countdown(600)">10 min</button>
-     <button @click="countdown(1800)">30 min</button>
-     <h1>{{time}}</h1>
+  <div id="app" class="text-center">
+     <button @click="countdown(3)" class="btn bt-cool">3 seg</button>
+     <button @click="countdown(60)" class="btn bt-cool">1 min</button>
+     <button @click="countdown(300)" class="btn bt-cool">5 min</button>
+     <button @click="countdown(600)" class="btn bt-cool">10 min</button>
+     <button @click="countdown(1800)" class="btn bt-cool">30 min</button>
+     <h1 class="pt-3">{{time}}</h1>
   </div>
 </template>
 
@@ -59,5 +59,13 @@ let interval;
 </script>
 
 <style scoped>
- 
+  .bt-cool{
+    color: lightseagreen;
+    background-color: darkorchid;
+    border-color: darkmagenta;
+  }
+
+  .bt-cool:hover{
+    background-color:darkmagenta;
+  }
 </style>
